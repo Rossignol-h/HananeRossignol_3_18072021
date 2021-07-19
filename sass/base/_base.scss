@@ -1,0 +1,30 @@
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+ 
+a,li,ul {
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+}
+  
+body {
+    overflow-x: hidden;             
+    width: 100%;
+    min-height: 100vh;
+}
