@@ -1,0 +1,63 @@
+@mixin padding-4() {
+    padding: 1rem 1rem;
+}
+@mixin padding-tb() {
+    padding: 2rem 0rem;
+}
+@mixin btn {
+    width: 207px;
+    padding: 1rem;
+    color: #fff;
+    background-image: linear-gradient($color-secondary, $color-primary);
+    cursor: pointer;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 0 ;
+    box-shadow: 0px 7px 20px 3px rgba(49, 49, 49, 0.479);
+    transition: all .4s ease-in-out;
+        &:hover{
+            background: linear-gradient(to right bottom, lighten($color-secondary, 5), lighten($color-primary, 5));
+            box-shadow: inset 1.95px 1.95px 2.6px 1px rgba(40, 19, 43, 0.377);  
+          }
+        }
+
+@mixin btn--filter {
+    padding: 1.5rem;
+    color: #000;
+    background-color: $bg-primary;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: .5s;    
+}
+@mixin btn--number {
+    display: inline-block;
+    position: absolute;
+    left: -.9rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    color: white;
+    background-color: $color-primary;
+    font-size: .9rem;
+    text-align: center;
+    line-height: 1.4rem;            
+    border-radius: 50%;
+}
+@mixin card--menu {
+    height: 80px;
+    padding: .5rem 0rem .5rem .7rem;
+    margin: 1.2rem 0rem;
+    border: 0;
+    color: #000;
+    background-color: white;
+    box-shadow: 0px 3px 8px rgba(82, 81, 81, 0.24);
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: .5s;
+        &:active {
+            background: $color-hover;
+            color: darken($color-primary, 10%);
+        }
+}

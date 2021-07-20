@@ -1,0 +1,96 @@
+/*****LOADER******/
+@keyframes rotate_loader {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scale {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes loading-out {
+    0% {
+        opacity: (1);
+    }
+    20% {
+        opacity: (1);
+    }
+    40% {
+        opacity: (1);
+    }
+    60% {
+        opacity: (1);
+    }
+    80% {
+        opacity: (.9);
+    }
+    100% {
+        visibility: hidden;
+        opacity: (0); 
+    }
+}
+/*******MENU CHECK******/
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+/******HEART ANIMATION****/
+@keyframes scale_icon {
+    0% {
+        opacity: 1;
+        color: rgba($color-secondary, 0.5);
+        transform: scale(0.1,0.1);
+        z-index: -1;
+    }
+    100% {
+        background-image: linear-gradient($color-secondary, $color-primary);
+        visibility: visible;
+        z-index: 1;
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+@keyframes scale_img {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.1,0.1);
+        z-index: -1;
+    }
+    100% {
+        visibility: visible;
+        z-index: 1;
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+@keyframes fade-img {
+    0% {
+        color:rgba(0, 0, 0, 1);
+    }
+    95% {
+        color:rgba(0, 0, 0, 1);
+    }
+    100% {
+        color: rgba(0, 0, 0, 0.0);
+        z-index: -1;
+        opacity: 0;
+    }
+}
+/********MENU CARD *****/
+@keyframes slide-in-bottom {
+    0% {
+    transform: translateY(100px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+    }
