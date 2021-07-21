@@ -1,0 +1,88 @@
+footer {
+    line-height: 1.8rem;
+    padding: 2rem 0rem 2rem 2rem;
+    background-color: $bg-footer;
+
+        .footer__logo {
+            font-family: $font-secondary;
+            font-weight: 400;
+            color: $txt-footer;
+            padding-bottom: 1rem;
+        } 
+            .footer__txt a {
+                color: $txt-footer;
+                
+            }
+            .footer__txt i {
+                width: 2rem;
+                padding-right: .7rem;
+            }
+            .con_icon, .men_icon {
+                display: none;
+            }
+}
+/*************breakpoint tablet****/
+@media only screen and (min-width: 640px) and (max-width: 2500px){
+    footer ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2rem 200px 200px 200px 100px 1fr;
+        grid-template-rows: 50px 50px;
+        grid-column-gap: 1rem;
+        align-items: flex-end;
+        justify-items: left;
+        & .footer__logo {
+            grid-area: 1/2/2/3;
+            font-size: 1.5rem;
+            color: $txt-footer;
+            padding: 0;
+            padding-bottom: 0;
+        }
+        & .propose {
+            grid-column: 4/5;
+        }
+        & .partenaire {
+            grid-column: 5/6;
+        }
+        & .mentions {
+            grid-column: 4/5;
+            grid-row: 2/3;
+        }
+        & .contact {
+            grid-column: 5/6;
+            grid-row: 2/3;
+        }
+        .con_icon, .men_icon {
+            display: unset;
+        }
+    }   
+}
+/*************breakpoint desktop****/
+@media only screen and (min-width: 990px) and (max-width: 2500px){
+    footer ul {
+        grid-template-columns: 1fr minmax(150px,250px) 200px 160px 160px 90px 1fr;
+        grid-template-rows: 20px 40px;
+        grid-column-gap: 1rem;
+        align-items: center;
+        justify-items: left;
+        & .footer__logo {
+            grid-area: 2/2/3/3;
+            
+        }
+        & .propose {
+            grid-column:3/4;
+            grid-row: 2/3;
+        }
+        & .partenaire {
+            grid-column: 4/5;
+            grid-row: 2/3;
+        }
+        & .mentions {
+            grid-column: 5/6;
+            grid-row: 2/3;
+        }
+        & .contact {
+            grid-column: 6/7;
+            grid-row: 2/3;
+        }
+    }   
+}
