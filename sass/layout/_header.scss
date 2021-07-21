@@ -1,0 +1,36 @@
+header {
+    display: grid;
+    grid-template-rows: 80px 60px 300px;
+    text-align: center;
+    background-color: white;
+
+   img {
+    justify-self: center;
+    align-self: center;
+    width: 160px;
+    }
+}
+.head__form {
+    background-color: #eaeaea;
+    color: $bg-footer;
+    padding: .5rem;
+    vertical-align: middle;
+    padding: 1rem 0rem;
+    font-weight: 500;
+    box-shadow:  inset 0px 11px 8px -10px rgb(151, 150, 150);
+    i {
+        padding: .5rem;
+    }
+}
+.head__search {
+    height: 100%;
+    background-color: $bg-primary; 
+    margin-bottom: 5rem;
+        h1 {
+            padding: 2rem 3rem;
+        }
+}
+.search__btn {
+    @include btn;
+    margin: 3rem;
+}
