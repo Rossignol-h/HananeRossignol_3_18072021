@@ -1,0 +1,60 @@
+.loading__screen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $bg-footer;
+    position: fixed;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    animation: loading-out 3s ease-out forwards;
+
+    #loading__logo {
+        display: flex;
+        width: 220px;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    .loading__spinner {
+        width: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        animation: rotate_loader 5s linear infinite;
+    }
+
+    .loading__spinner span {
+        width: 32px;
+        height: 32px;
+        margin: 3px;
+        animation: scale 1.5s linear infinite;
+    }
+
+    .loading__spinner span:nth-child(1) {
+        border-radius: 50% 50% 0 50%;
+        background-color: $color-secondary;
+        transform-origin: bottom right;
+    }
+    .loading__spinner span:nth-child(2) {
+        border-radius: 50% 50% 50% 0;
+        background-color: $color-primary;
+        transform-origin: bottom left;
+        animation-delay: .5s;
+    }
+    .loading__spinner span:nth-child(3) {
+        border-radius: 50% 0% 50% 50%;
+        background-color: $color-primary;
+        transform-origin: bottom right;
+        animation-delay: 1.5s;
+    }
+    .loading__spinner span:nth-child(4) {
+        border-radius: 0 50% 50% 50%;
+        background-color: $color-tertiary;
+        transform-origin: bottom left;
+        animation-delay: 1s;
+    }
+}
