@@ -185,6 +185,7 @@ main {
         border-radius: 2rem;
         box-shadow: $shadow-darker;
         margin: 5rem 0rem 4rem 0rem;
+        grid-template-columns: 1fr minmax(220px,300px) 1rem;
         grid-template-rows: 80px repeat(3, 100px) ;
         grid-column: 3/4;
             & h2 {

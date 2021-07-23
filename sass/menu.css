@@ -31,45 +31,14 @@ body {
 }
 
 /*****LOADER******/
-@-webkit-keyframes rotate_loader {
-  to {
-    transform: rotate(360deg);
-  }
-}
 @keyframes rotate_loader {
   to {
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes scale {
-  50% {
-    transform: scale(1.1);
-  }
-}
 @keyframes scale {
   50% {
     transform: scale(1.1);
-  }
-}
-@-webkit-keyframes loading-out {
-  0% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  100% {
-    visibility: hidden;
-    opacity: 0;
   }
 }
 @keyframes loading-out {
@@ -94,14 +63,6 @@ body {
   }
 }
 /*******MENU CHECK******/
-@-webkit-keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -111,21 +72,6 @@ body {
   }
 }
 /******HEART ANIMATION****/
-@-webkit-keyframes scale_icon {
-  0% {
-    opacity: 1;
-    color: rgba(255, 121, 218, 0.5);
-    transform: scale(0.1, 0.1);
-    z-index: -1;
-  }
-  100% {
-    background-image: linear-gradient(#ff79da, #9356dc);
-    visibility: visible;
-    z-index: 1;
-    opacity: 1;
-    transform: scale(1, 1);
-  }
-}
 @keyframes scale_icon {
   0% {
     opacity: 1;
@@ -135,19 +81,6 @@ body {
   }
   100% {
     background-image: linear-gradient(#ff79da, #9356dc);
-    visibility: visible;
-    z-index: 1;
-    opacity: 1;
-    transform: scale(1, 1);
-  }
-}
-@-webkit-keyframes scale_img {
-  0% {
-    opacity: 0.5;
-    transform: scale(0.1, 0.1);
-    z-index: -1;
-  }
-  100% {
     visibility: visible;
     z-index: 1;
     opacity: 1;
@@ -167,19 +100,6 @@ body {
     transform: scale(1, 1);
   }
 }
-@-webkit-keyframes fade-img {
-  0% {
-    color: black;
-  }
-  95% {
-    color: black;
-  }
-  100% {
-    color: rgba(0, 0, 0, 0);
-    z-index: -1;
-    opacity: 0;
-  }
-}
 @keyframes fade-img {
   0% {
     color: black;
@@ -194,16 +114,6 @@ body {
   }
 }
 /********MENU CARD *****/
-@-webkit-keyframes slide-in-bottom {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 @keyframes slide-in-bottom {
   0% {
     transform: translateY(100px);
@@ -325,11 +235,9 @@ footer .con_icon, footer .men_icon {
   width: 30px;
 }
 .animation__heart:hover .animation__heart--empty > img {
-  -webkit-animation: fade-img 0.5s ease-out forwards 0.3s;
           animation: fade-img 0.5s ease-out forwards 0.3s;
 }
 .animation__heart:hover .animation__heart--full > img {
-  -webkit-animation: scale_img 0.5s ease-out forwards;
           animation: scale_img 0.5s ease-out forwards;
 }
 
@@ -402,7 +310,7 @@ footer .con_icon, footer .men_icon {
   grid-area: 1/1/2/3;
   font-size: 1.1rem;
   font-weight: 500;
-  white-space: wrap;
+  white-space: normal;
   max-width: 270px;
 }
 
@@ -425,43 +333,33 @@ footer .con_icon, footer .men_icon {
 
 .menu__card {
   opacity: 0;
-  -webkit-animation: slide-in-bottom 1s ease-out forwards;
           animation: slide-in-bottom 1s ease-out forwards;
 }
 .menu__card--1 {
-  -webkit-animation-delay: 0.1111111111s;
           animation-delay: 0.1111111111s;
 }
 .menu__card--2 {
-  -webkit-animation-delay: 0.2222222222s;
           animation-delay: 0.2222222222s;
 }
 .menu__card--3 {
-  -webkit-animation-delay: 0.3333333333s;
           animation-delay: 0.3333333333s;
 }
 .menu__card--4 {
-  -webkit-animation-delay: 0.4444444444s;
           animation-delay: 0.4444444444s;
 }
 .menu__card--5 {
-  -webkit-animation-delay: 0.5555555556s;
           animation-delay: 0.5555555556s;
 }
 .menu__card--6 {
-  -webkit-animation-delay: 0.6666666667s;
           animation-delay: 0.6666666667s;
 }
 .menu__card--7 {
-  -webkit-animation-delay: 0.7777777778s;
           animation-delay: 0.7777777778s;
 }
 .menu__card--8 {
-  -webkit-animation-delay: 0.8888888889s;
           animation-delay: 0.8888888889s;
 }
 .menu__card--9 {
-  -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
@@ -501,7 +399,6 @@ footer .con_icon, footer .men_icon {
 }
 
 .menu__card:hover .check__icon > p {
-  -webkit-animation: rotate 0.5s ease-in-out forwards;
           animation: rotate 0.5s ease-in-out forwards;
 }
 
@@ -593,9 +490,7 @@ header {
   grid-area: 2/1/3/5;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center 60%;
      object-position: center 60%;
   z-index: -3;
 }
