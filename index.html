@@ -3,17 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./sass/main.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
-        <script src="https://kit.fontawesome.com/adf954b9d4.js" crossorigin="anonymous"></script>
-        <title>Ohmyfood</title>
-        <meta name="description" content="restaurant" />
+        <meta name="description" content="Réservez votre restaurant gastronomique à Paris et commandez votre menu tout sera prêt à votre arrivée!!" />
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary">
         <!-- Open Graph data -->
@@ -22,12 +14,23 @@
         <meta property="og:url" content="https://rossignol-h.github.io/HananeRossignol_3_18072021/gout.html"/>
         <meta property="og:image" content="http://example.com/image.jpg"/>
         <meta property="og:description" content="restaurant"/>
+        
+        <link rel="stylesheet" href="./public/css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/adf954b9d4.js" crossorigin="anonymous"></script>
+        
+        <title>Ohmyfood</title>
     </head>
 
 <body>
     <div class="loading__screen">
         <div id="loading__logo">
-            <img src="./images/logo/logo.svg" alt="ohmyfood"/>
+            <img src="./public/images/logo/logo.svg" alt="ohmyfood"/>
         </div>
         <div class="loading__spinner">
             <span></span>
@@ -36,28 +39,23 @@
             <span></span>
         </div>
     </div>
-
     <header>
-        <img class="head__logo" src="./images/logo/ohmyfood@2x.svg" alt="ohmyfood"/>
+        <img class="head__logo" src="./public/images/logo/ohmyfood@2x.svg" alt="ohmyfood"/>
         <form class="head__form" method="POST" action="#">
             <i class="fas fa-map-marker-alt"></i>
             <span>Paris, Belleville</span>
         </form>
-
-
         <section class="head__search">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-            <button class="search__btn" onclick="location.href='#'">
+            <button class="head__search--btn" onclick="location.href='#'">
                 Explorer nos restaurants
             </button>
         </section>
     </header>
-
         <main>
             <section class="filter__wrapper">
-            <h2>Fonctionnement</h2>
-            
+                <h2>Fonctionnement</h2>
                 <a href="#" class="filter__btn btn1">
                     <span class="filter__number">1</span>
                     <i class="fas fa-mobile-alt"></i>
@@ -73,60 +71,57 @@
                     <i id="resto_icon" class="fas fa-store"></i>
                     <span>Dégustez au restaurant</span>
                 </a>
-            
             </section>
-
             <section class="main__wrapper">
                 <h2>Restaurants</h2>
                 <article class="main__card1">
                     <a href="gout.html">
-                        <img class="card--img" src="./images/restaurants/gout.webp" alt=""/>
+                        <img class="card--img" src="./public/images/restaurants/gout.webp" alt="plat sur une table de restaurant"/>
                         <div class="main__gout--new">Nouveau</div>
                         <h3>La palette du goût</h3>
                         <p>Menilmontant</p>
                         <div class="animation__heart">
-                            <span class="animation__heart--empty"><img src="./images/logo/empty_heart.png" alt=""></span>
-                            <span class="animation__heart--full"><img src="./images/logo/full_heart.png" alt="coeur"></span>
+                            <span class="animation__heart--empty"><img src="./public/images/logo/empty_heart.png" alt="coeur vide"></span>
+                            <span class="animation__heart--full"><img src="./public/images/logo/full_heart.png" alt="coeur coloré"></span>
                         </div>  
                     </a>
                 </article>
                 <article class="main__card2">
                     <a href="note.html">
-                        <img class="card--img" src="./images/restaurants/note.webp" alt=""/>
+                        <img class="card--img" src="./public/images/restaurants/note.webp" alt=""/>
                         <div class="main__note--new">Nouveau</div>
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
                         <div class="animation__heart">
-                            <span class="animation__heart--empty"><img src="./images/logo/empty_heart.png" alt=""></span>
-                            <span class="animation__heart--full"><img src="./images/logo/full_heart.png" alt="coeur"></span>
+                            <span class="animation__heart--empty"><img src="./public/images/logo/empty_heart.png" alt="coeur vide"></span>
+                            <span class="animation__heart--full"><img src="./public/images/logo/full_heart.png" alt="coeur coloré"></span>
                         </div>   
                     </a>
                 </article>
                 <article class="main__card3">
                     <a href="french.html">
-                        <img class="card--img" src="./images/restaurants/french.webp" alt=""/> 
+                        <img class="card--img" src="./public/images/restaurants/french.webp" alt=""/> 
                         <h3>A la française</h3>
                         <p>Cité rouge</p>
                         <div class="animation__heart">
-                            <span class="animation__heart--empty"><img src="./images/logo/empty_heart.png" alt=""></span>
-                            <span class="animation__heart--full"><img src="./images/logo/full_heart.png" alt="coeur"></span>
+                            <span class="animation__heart--empty"><img src="./public/images/logo/empty_heart.png" alt="coeur vide"></span>
+                            <span class="animation__heart--full"><img src="./public/images/logo/full_heart.png" alt="coeur coloré"></span>
                         </div> 
                     </a>
                 </article>
                 <article class="main__card4">
                     <a href="sens.html">
-                        <img class="card--img" src="./images/restaurants/sens.webp" alt="" />
+                        <img class="card--img" src="./public/images/restaurants/sens.webp" alt="" />
                         <h3>Le délice des sens</h3>
                         <p>Folie-Méricourt</p>
                         <div class="animation__heart">
-                            <span class="animation__heart--empty"><img src="./images/logo/empty_heart.png" alt=""></span>
-                            <span class="animation__heart--full"><img src="./images/logo/full_heart.png" alt="coeur"></span>
+                            <span class="animation__heart--empty"><img src="./public/images/logo/empty_heart.png" alt="coeur vide"></span>
+                            <span class="animation__heart--full"><img src="./public/images/logo/full_heart.png" alt="coeur coloré"></span>
                         </div> 
                     </a>
                 </article>
             </section>
         </main>
-
         <footer>
             <ul class="footer__txt">
                 <li class="footer__logo">Ohmyfood</li>

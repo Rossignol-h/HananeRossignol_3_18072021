@@ -30,7 +30,7 @@
     border-radius: 1.5rem;
     font-size: 1rem;
     font-weight: 500;
-    transition: .5s;    
+    transition: .1s ease-in-out;    
 }
 @mixin btn--number {
     display: inline-block;
@@ -60,4 +60,12 @@
             background: $color-hover;
             color: darken($color-primary, 10%);
         }
+}
+@mixin card--hover {
+    transform: translateY(-2px);
+    transform: scale(1.01);
+    box-shadow: 2px 2px 10px 5px rgba(7, 7, 7, 0.5);
+}
+@mixin footer--hover {
+    color: $color-tertiary;
 }

@@ -97,7 +97,6 @@
     align-self: center;
     justify-self: center;  
 }
-
 $num_card : 9;
 $anim_time:1s;
 $anim_delay: $anim_time / $num_card;
@@ -141,7 +140,6 @@ $anim_delay: $anim_time / $num_card;
             text-align: center; 
         }
 }
-
 .menu__card:hover .check__icon {
     width: 4rem;
     right: 0;  
@@ -149,7 +147,6 @@ $anim_delay: $anim_time / $num_card;
 .menu__card:hover .check__icon> p {
     animation: rotate .5s ease-in-out forwards;   
 }
-
 /******** ORDER *****/
 .order_input {
     display: grid;
@@ -163,19 +160,15 @@ main button {
     @include btn;
 }
 /*******BREAKPOINT TABLET landscape********/
-
 @media only screen and (min-width: 1024px) and (max-width: 2500px){
     .main__menu--head {
         grid-template-columns: 1fr 260px 4rem 1fr;
         grid-template-rows: 30px 60px 30px;
     }
-
     .main__menu--cards{
     display: grid;
     grid-template-columns:1rem 1fr 1fr 1fr 1rem;
-    grid-template-rows: 40px repeat(3, 80px) 20px;
     grid-column-gap: 2rem;
-    
 }
 .menu__title--entrees {
     grid-area: 1/2/2/3;

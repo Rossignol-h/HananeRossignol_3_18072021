@@ -1,27 +1,30 @@
 footer {
-    line-height: 1.8rem;
+    line-height: 2.3rem;
     padding: 2rem 0rem 2rem 2rem;
     background-color: $bg-footer;
-
+    
         .footer__logo {
             font-family: $font-secondary;
+            font-size: 1.2rem;
             font-weight: 400;
             color: $txt-footer;
             padding-bottom: 1rem;
         } 
-            .footer__txt a {
-                color: $txt-footer;
-                
-            }
-            .footer__txt i {
-                width: 2rem;
-                padding-right: .7rem;
-            }
-            .con_icon, .men_icon {
-                display: none;
-            }
+        .footer__txt a {
+            color: $txt-footer;
+            &:hover {
+                @include footer--hover;  
+                }
+        }
+        .footer__txt i {
+            width: 2rem;
+            padding-right: .7rem;
+        }
+        .con_icon, .men_icon {
+            display: none;
+        }
 }
-/*************breakpoint tablet****/
+/*************FOOTER tablet****/
 @media only screen and (min-width: 640px) and (max-width: 2500px){
     footer ul {
         display: grid;
@@ -56,7 +59,7 @@ footer {
         }
     }   
 }
-/*************breakpoint desktop****/
+/*************FOOTER desktop****/
 @media only screen and (min-width: 990px) and (max-width: 2500px){
     footer ul {
         grid-template-columns: 1fr minmax(150px,250px) 200px 160px 160px 90px 1fr;
@@ -66,7 +69,6 @@ footer {
         justify-items: left;
         & .footer__logo {
             grid-area: 2/2/3/3;
-            
         }
         & .propose {
             grid-column:3/4;
