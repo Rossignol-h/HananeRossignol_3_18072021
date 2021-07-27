@@ -14,10 +14,15 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 15px;
   overflow-x: hidden;
 }
 
+@media only screen and (min-width: 640px) and (max-width: 2500px) {
+  html {
+    font-size: 16px;
+  }
+}
 a, li, ul {
   text-decoration: none;
   color: #000;
@@ -202,23 +207,24 @@ footer .con_icon, footer .men_icon {
 /******main*******/
 .main__menu--head {
   display: grid;
-  grid-template-columns: 1rem 260px 1fr 4rem;
-  grid-template-rows: 30px 60px;
-  align-items: center;
+  grid-template-columns: 1rem 1fr 280px 1fr 4rem 1fr;
+  grid-template-rows: 50px 60px;
 }
 
 .main__menu--title {
-  grid-area: 2/2/3/3;
+  grid-area: 2/3/3/4;
   display: flex;
   flex-wrap: wrap;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 400;
   font-family: "Shrikhand";
 }
 
 /******heart animation******/
 .animation__heart {
-  grid-area: 2/4/3/5;
+  grid-area: 2/5/3/6;
+  justify-self: center;
+  padding-top: 0.2rem;
   position: relative;
   height: 25px;
   width: 30px;
@@ -298,8 +304,6 @@ footer .con_icon, footer .men_icon {
   grid-area: 1/1/2/3;
   font-size: 1.1rem;
   font-weight: 500;
-  white-space: wrap;
-  max-width: 270px;
 }
 
 .menu__card h5 {
@@ -420,9 +424,9 @@ main button:hover {
 
 /*******BREAKPOINT TABLET landscape********/
 @media only screen and (min-width: 1024px) and (max-width: 2500px) {
-  .main__menu--head {
-    grid-template-columns: 1fr 260px 4rem 1fr;
-    grid-template-rows: 30px 60px 30px;
+  .menu__card:hover h3 {
+    white-space: normal;
+    max-width: 200px;
   }
 
   .main__menu--cards {
@@ -486,5 +490,8 @@ header {
 @media only screen and (min-width: 1024px) and (max-width: 2500px) {
   header {
     grid-template-rows: 80px 300px;
+  }
+  header .header__menu--logo {
+    width: 200px;
   }
 }

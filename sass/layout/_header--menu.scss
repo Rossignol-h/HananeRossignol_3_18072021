@@ -25,5 +25,8 @@ header {
 @media only screen and (min-width: 1024px) and (max-width: 2500px){
     header {
         grid-template-rows: 80px 300px;
+        .header__menu--logo {
+            width: 200px;
+        }
     }
 }

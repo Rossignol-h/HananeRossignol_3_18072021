@@ -14,10 +14,15 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 15px;
   overflow-x: hidden;
 }
 
+@media only screen and (min-width: 640px) and (max-width: 2500px) {
+  html {
+    font-size: 16px;
+  }
+}
 a, li, ul {
   text-decoration: none;
   color: #000;
@@ -220,6 +225,14 @@ header img {
   box-shadow: inset 1.95px 1.95px 2.6px 1px rgba(40, 19, 43, 0.377);
 }
 
+@media only screen and (min-width: 640px) and (max-width: 2500px) {
+  header {
+    grid-template-rows: 80px 60px 280px;
+  }
+  header img {
+    width: 200px;
+  }
+}
 main {
   width: 100%;
   background-color: #f6f6f6;
@@ -421,26 +434,26 @@ p {
   }
 }
 /**************desktop with aside******/
-@media only screen and (min-width: 1100px) and (max-width: 2500px) {
+@media only screen and (min-width: 1060px) and (max-width: 2500px) {
   main {
     display: grid;
-    margin-top: 1.5rem;
-    background-color: white;
-    grid-template-columns: 1fr minmax(640px, 740px) minmax(200px, 300px) 1fr;
+    grid-template-columns: 1fr minmax(620px, 740px) minmax(250px, 300px) 1fr;
+    background-color: #eaeaea;
+    box-shadow: inset 0px 11px 8px -10px #979696;
   }
 
   .main__wrapper {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-area: 1/2/2/3;
+    grid-gap: 1.5rem;
   }
 
   .filter__wrapper {
-    margin-left: 1rem;
     background-color: #cbf6eb;
     border-radius: 2rem;
     box-shadow: 2px 2px 5px 5px rgba(163, 160, 160, 0.5);
-    margin: 5rem 0rem 4rem 0rem;
-    grid-template-rows: 80px repeat(3, 100px);
+    margin: 5.6rem 1rem 4rem 0rem;
+    padding: 1rem;
+    grid-template-rows: 80px repeat(3, 95px);
     grid-column: 3/4;
   }
 
